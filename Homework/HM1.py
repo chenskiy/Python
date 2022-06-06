@@ -71,10 +71,10 @@ print('Введите координаты точки B:')
 x_B = float(input('x = '))
 y_B = float(input('y = '))
 
-# X = (x_A - x_B)**2
-# Y = (y_A - y_B)**2
+# X = (x_A - x_B)**2                      
+# Y = (y_A - y_B)**2                              
 # AB = round(((X + Y) ** 0.5),3)
 
 AB = round((((x_A - x_B)**2 + (y_A - y_B)**2) ** 0.5),3)
-print(AB)
+print(AB) 
 
