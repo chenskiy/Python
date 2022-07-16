@@ -7,7 +7,7 @@
 # value = 12334
 # # print(type(value))
 
-# s = 'hello world' 
+# s = 'hello world'
 
 # print(s)   # вывод строки
 # print(a, '-' ,b, '-' ,s)
@@ -63,7 +63,6 @@
 # is_odd = not f[0] % 2
 # print(is_odd)
 
- 
 
 # if if-else
 
@@ -74,3 +73,12 @@
 # else:
 #     print(b)
 
+
+def f(n):
+    n**2
+    return n
+
+
+num = [1, 2, 3, 5, 8, 15, 23, 38]
+x = ((num[i], f(num)) for i in num if num[i] % 2 == 0)
+print(x)
