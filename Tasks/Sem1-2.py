@@ -1,6 +1,7 @@
 # 1. По двум заданным числам проверить является ли одно квадратом второго
 
 
+from math import trunc
 from random import randint
 
 
@@ -15,6 +16,7 @@ def Square(a, b):
 
 # Square(a=int(input("Введите первое число: ")),
 #        b=int(input('Введите второе число: ')))
+
 
 # 2. Найти максимальное из пяти чисел
 
@@ -32,24 +34,33 @@ def Maxi(x):
 
 # 3. Вывести на экран числа от -N до N
 
-# lst = [i for i in range(-5 , 6)]
+lst = [i for i in range(-5, 6)]
 # print (lst)
 
 # 4. Показать первую цифру дробной части числа
 
-# a = float(input())
-# a = trunc(a%1 *10)
-# print(a)
+
+def drob(a):
+    a = trunc(a % 1 * 10)
+    return a
+
+
+# print(drob(float(input())))
+
+
 
 # 5. Дано число. Проверить кратно ли оно 5 и 10 или 15 но не 30
 
-# num = int(input('Введите чило: '))
-# if (num%10 == 0 or num%15 == 0) and num % 30 != 0:
-#     print('Число подходит')
-# else:
-#     print('Число не подходит')
+def kratno (num):
+    if (num%10 == 0 or num%15 == 0) and num % 30 != 0:
+        print('Число подходит')
+    else:
+        print('Число не подходит')
+
+# kratno (int(input('Введите чило: ')))
 
 # 6. Дано число обозначающее день недели. Вывести его название и указать является ли он выходным.
+
 
 def dey_week(day):
     if day >= 1 and day <= 7:
@@ -60,8 +71,8 @@ def dey_week(day):
     else:
         print('такого дня не существует')
 
-
 # dey_week(day=int(input('Введите день недели от 1 до 7: ')))
+
 
 # 7. Проверить истинность утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат
 
@@ -73,16 +84,17 @@ def to_bool(x):
 
 
 def Ex2():
-    # ¬(X ⋁ Y) = ¬X ⋀ ¬Y
     for x in range(2):
         for y in range(2):
-            if (not(to_bool(x) or to_bool(y)) == (not(to_bool(x)) and not(to_bool(y)))) == False:
-                return False
+            for z in range(2):
+                if (not(to_bool(x) or to_bool(y) or to_bool(z)) == (not(to_bool(x)) and not(to_bool(y)) and not(to_bool(z)))) == False:
+                    return False
     return True
 
-# print(Ex2())
+print(Ex2())
 
 # 8. Сообщить в какой четверти координатной плоскости или на какой оси находится точка с координатами Х и У
+
 
 def coordinate_plane(x, y):
     if x == 0 and y == 0:
@@ -131,9 +143,9 @@ def points_quarter(num):
 # x_B = float(input('x = '))
 # y_B = float(input('y = '))
 
-# # X = (x_A - x_B)**2                      
-# # Y = (y_A - y_B)**2                              
+# # X = (x_A - x_B)**2
+# # Y = (y_A - y_B)**2
 # # AB = round(((X + Y) ** 0.5),3)
 
 # AB = round((((x_A - x_B)**2 + (y_A - y_B)**2) ** 0.5),3)
-# print(AB) 
+# print(AB)
