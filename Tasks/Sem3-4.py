@@ -341,3 +341,30 @@ num1 = int(input('Введите число 1: '))
 num2 = int(input('Введите число 2: '))
 print(total_multiple(num1, num2))
 '''
+
+# 31. Вычислить число  c заданной точностью d
+# 	Пример: при d = 0.001,  = 3.141. 10-1d10-10
+
+from math import pi
+
+def accuracy(d):
+    p = pi 
+    count = 0 
+    for i in d:
+        count+=1
+    count-=2
+    return round(p, count)
+
+# d = '0.00000000000000000000001'
+# print(accuracy(d))
+
+# 32. Составить список простых множителей натурального числа N
+
+def prime_factors(n):
+    k = []
+    for i in range(1, n+1):
+        if n % i == 0: 
+            k.append(i)
+    return k
+
+# print (prime_factors(int(input('Введите число: '))))

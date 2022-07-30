@@ -64,7 +64,7 @@ def assembling(r):  #заполняем строку многочленами
                 st += str(r[i]) + 'x' + ' + '
             else:
                 st += str(r[i]) + 'x^' + str(i) + ' + '
-        if r[i] == 1:
+        elif r[i] == 1:
             if i == 0:
                 st += ' + '
             elif i == 1:
@@ -114,7 +114,7 @@ def summ(f1, f2):   # суммируем коэф. многочлена
 r = rand(k) 
 print(f'{r} - Сформированый случайным образом список(2) коэффициентов')
 a = assembling(r)
-print(f'{a} - записаный в файл(2) многочлен в степени {k}')
+print(f'{a} - записаный в файл(2) многочлен в степени {k}\n')
 
 path = 'Task5.txt'              
 with open(path, 'w') as f_2:
@@ -133,10 +133,10 @@ print(f'{ppf_1} коэффициенты многочлена из 1-го фай
 print(f'{ppf_2} коэффициенты многочлена из 2-го файла')
 
 s = summ(ppf_1, ppf_2)
-print(f'{s} сумма многочленов')
+print(f'{s} сумма коэф. многочленов\n')
 
 assemb = assembling(s)
-print(f'{assemb} Записана в файл(3) сумма коэф.')
+print(f'{assemb} Сформирован файл(3) содержащий сумму многочленов\n')
 
 dpat = 'Task5(end).txt'
 with open(dpat, 'w') as f_3:

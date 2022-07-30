@@ -84,4 +84,7 @@ def Ex2():
                 return False
     return True
 
-print(Ex2())
+# print(Ex2())
+
+name = input()
+print('Привет, ', name, '!', sep = '')
