@@ -100,6 +100,8 @@ def zapoln(n):
 N = 3  # int(input())
 # print(summ(zapoln(N)))
 
+
+
 # 19. Реализовать алгоритм перемешивания списка.
 
 # lst = list(range(1, 50, 6))
@@ -143,8 +145,8 @@ def spis_ch(ls, sh):
             spi.append(i)
     return spi
 
-# spisok = ['123ds', '234', '5342', '3231', 'asd21f']
-# lk = '5'
+spisok = ['123ds', '234', '5342', '3231', 'asd21f']
+lk = '5'
 # print(spis_ch(spisok, lk))
 
 
