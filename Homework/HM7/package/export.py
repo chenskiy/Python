@@ -10,6 +10,6 @@ def export_xml():
         xml += f'{ls[i]}\n'
     
     xml += '</xml>'
-    path_export = Path("HM6", "export.xml")
+    path_export = Path("HM7", "export.xml")
     with open(path_export, 'w') as w_file:
         w_file.write(xml)

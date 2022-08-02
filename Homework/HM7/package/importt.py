@@ -4,7 +4,7 @@ from pathlib import Path
 
 def improt_csv(x):
     ls = []
-    path_import = Path("HM6", "classmates.csv")
+    path_import = Path("HM7", "classmates.csv")
     with open(path_import, encoding='utf-8') as r_file:
         file_reader = csv.reader(r_file, delimiter = ",")
         count = 0

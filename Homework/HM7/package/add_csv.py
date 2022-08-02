@@ -3,7 +3,7 @@ from pathlib import Path
 from package.logger import data_logger
 
 def add_csv():
-    path_add = Path("HM6", "classmates.csv")
+    path_add = Path("HM7", "classmates.csv")
     yn = input('Хотите добавить данные?(Y/N) ')
     if yn == 'Y':
         # hum = int(input('Сколько человек? '))
