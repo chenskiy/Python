@@ -7,6 +7,11 @@
 #     result = (-3)**i
 #     print(result, end = ' ')
 
+# N = 5
+# for i in range(N):
+#     result = (-3)**i
+#     print(result, end = ' ')
+
 # 13. Для натурального n создать словарь индекс-значение, состоящий из элементов последовательности 3n + 1.
 #     Для n = 6: {1: 4, 2: 7, 3: 10, 4: 13, 5: 16, 6: 19}
 
@@ -53,6 +58,14 @@ def proizv(n):
     return result
 
 # print (proizv(5))
+
+N = 5
+sum = 1
+result = []
+for i in range(1, N+1):
+    sum *= i
+    result.append(sum)
+print(result)
 
 # 17. Задать список из n чисел последовательности (1+1/n)^n и вывести на экран их сумму
 

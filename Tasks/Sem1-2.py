@@ -5,17 +5,22 @@ from math import trunc
 from random import randint
 
 
-def Square(a, b):
-    if a*a == b:
-        print('a^2 = b')
-    elif b*b == a:
-        print('b^2 = a')
-    else:
-        print('НЕ является')
-
+# def Square(a, b):
+#     if a*a == b:
+#         print('a^2 = b')
+#     elif b*b == a:
+#         print('b^2 = a')
+#     else:
+#         print('НЕ является')
 
 # Square(a=int(input("Введите первое число: ")),
 #        b=int(input('Введите второе число: ')))
+
+
+# def Square(a, b):
+#     return a*a == b or b*b == a
+# print(Square(2,6))
+
 
 
 # 2. Найти максимальное из пяти чисел
@@ -31,6 +36,17 @@ def Maxi(x):
 
 # lst = [randint(-10, 50) for i in range(5)]
 # print(f'{lst} ---> {Maxi(lst)}')
+
+# def maxx(x):
+#     return max(i for i in x)
+# print(maxx([3, 2, 1, 5, 2, 9]))
+
+x = [3, 2, 1, 5, 2, 9]
+maxi = 0
+for i in x:
+    if i > maxi:
+        maxi = i
+print(maxi)   
 
 # 3. Вывести на экран числа от -N до N
 
@@ -91,7 +107,7 @@ def Ex2():
                     return False
     return True
 
-print(Ex2())
+# print(Ex2())
 
 # 8. Сообщить в какой четверти координатной плоскости или на какой оси находится точка с координатами Х и У
 
