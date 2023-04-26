@@ -28,6 +28,5 @@ def heapsort(arr):
 arr = [43, 65, 23, 12, 6, 4, 2, 1]
 heapsort(arr)
 n = len(arr)
-print("Sorted array is")
 for i in range(n):
-    print("%d" % arr[i])
+    print(arr[i])
